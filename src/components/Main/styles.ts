@@ -6,4 +6,8 @@ export const styles = StyleSheet.create({
     flexDirection: 'column',
     paddingHorizontal: 24,
   },
+  infoContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  }
 })
