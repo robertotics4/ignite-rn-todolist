@@ -11,8 +11,9 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between'
   },
   taskListContainer: {
-    borderTopColor: '#333333',
-    borderTopWidth: 1,
-    marginTop: 16
+    marginTop: 16,
+  },
+  itemSeparator: {
+    height: 12
   }
 })
