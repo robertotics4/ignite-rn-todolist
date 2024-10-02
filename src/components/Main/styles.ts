@@ -9,5 +9,10 @@ export const styles = StyleSheet.create({
   infoContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between'
+  },
+  taskListContainer: {
+    borderTopColor: '#333333',
+    borderTopWidth: 1,
+    marginTop: 16
   }
 })
