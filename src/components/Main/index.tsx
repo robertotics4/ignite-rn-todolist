@@ -31,8 +31,8 @@ export function Main() {
       <Form handleAddTask={handleAddTask} />
 
       <View style={styles.infoContainer}>
-        <TaskInfo title="Criadas" value={0} />
-        <TaskInfo title="Concluídas" value={0} />
+        <TaskInfo title="Criadas" value={tasks.length} />
+        <TaskInfo title="Concluídas" value={tasks.filter(t => t.done === true).length} />
       </View>
 
       <FlatList
