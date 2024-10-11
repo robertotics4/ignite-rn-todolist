@@ -3,7 +3,7 @@ import { styles } from "./styles";
 
 interface TaskInfoProps {
   title: string,
-  value: number
+  value: number,
 }
 
 export function TaskInfo({ title, value }: TaskInfoProps) {
