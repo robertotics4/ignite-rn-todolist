@@ -21,7 +21,9 @@ export const styles = StyleSheet.create({
   },
   doneCircle: {
     borderWidth: 0,
-    backgroundColor: '#5E60CE'
+    backgroundColor: '#5E60CE',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   description: {
     fontSize: 14,

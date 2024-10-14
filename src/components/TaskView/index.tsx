@@ -19,7 +19,7 @@ export function TaskView({ task, updateTask, deleteTask }: TaskProps) {
           updateTask(task)
         }}
       >
-
+        {task.done && <Feather name="check" size={10} color="#FFF" />}
       </TouchableOpacity>
 
       <Text style={[styles.description, task.done && styles.descriptionIfDone]}>{task.description}</Text>

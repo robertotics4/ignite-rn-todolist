@@ -51,7 +51,7 @@ export function Main() {
         <TaskInfo title="Criadas" value={tasks.length} />
         <TaskInfo title="Concluídas" value={tasks.filter(t => t.done === true).length} color="secondary" />
       </View>
-
+        
       <FlatList
         style={styles.taskListContainer}
         data={tasks}
