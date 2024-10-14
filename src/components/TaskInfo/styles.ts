@@ -7,14 +7,13 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 8
   },
-  primaryTitle: {
+  title: {
     fontSize: 14,
     fontWeight: 'bold',
     color: '#4EA8DE'
   },
-  secondaryTitle: {
+  customTitleColor: {
     fontSize: 14,
-    fontWeight: 'bold',
     color: '#8284FA'
   },
   valueContainer: {

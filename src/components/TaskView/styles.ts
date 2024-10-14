@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#262626',
     borderColor: '#333333',
   },
-  done: {
+  emptyCircle: {
     height: 17,
     width: 17,
     backgroundColor: 'transparent',
@@ -19,8 +19,16 @@ export const styles = StyleSheet.create({
     borderColor: '#4EA8DE',
     borderRadius: 17
   },
+  doneCircle: {
+    borderWidth: 0,
+    backgroundColor: '#5E60CE'
+  },
   description: {
     fontSize: 14,
     color: '#F2F2F2'
+  },
+  descriptionIfDone: {
+    textDecorationLine: "line-through",
+    color: '#808080'
   }
 });
