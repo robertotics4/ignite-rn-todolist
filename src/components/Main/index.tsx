@@ -38,6 +38,11 @@ export function Main() {
     setTasks(updatedList)
   }
 
+  function deleteTask(deletedTask: Task) {
+    const updatedList = tasks.filter(t => t.id !== deletedTask.id);
+    setTasks(updatedList)
+  }
+
   return (
     <View style={styles.container}>
       <Form handleAddTask={handleAddTask} />
@@ -53,7 +58,7 @@ export function Main() {
         keyExtractor={item => item.id}
         ListEmptyComponent={<EmptyList />}
         ItemSeparatorComponent={() => <View style={styles.itemSeparator} />}
-        renderItem={({ item }) => (<TaskView task={item} updateTask={updateTask} />)}
+        renderItem={({ item }) => (<TaskView task={item} updateTask={updateTask} deleteTask={deleteTask} />)}
       />
     </View>
   );
