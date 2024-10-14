@@ -32,7 +32,7 @@ export function Main() {
 
       <View style={styles.infoContainer}>
         <TaskInfo title="Criadas" value={tasks.length} />
-        <TaskInfo title="Concluídas" value={tasks.filter(t => t.done === true).length} />
+        <TaskInfo title="Concluídas" value={tasks.filter(t => t.done === true).length} color="secondary" />
       </View>
 
       <FlatList
